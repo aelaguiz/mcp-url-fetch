@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "url-fetch-mcp"
+version = "0.1.0"
+description = "A clean MCP implementation for fetching content from URLs"
+authors = [
+    {name = "Claude", email = "noreply@anthropic.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=0.1.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.3.0",
+    "ruff>=0.0.267",
+    "pytest>=7.3.1",
+]
+
+[tool.setuptools]
+packages = ["url_fetch_mcp"]
+package-dir = {"" = "src"}
+
+[project.scripts]
+url-fetch-mcp = "url_fetch_mcp.main:cli"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

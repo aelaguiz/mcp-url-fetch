@@ -1,0 +1,10 @@
+{
+  "name": "URL Fetcher",
+  "description": "Fetches content from URLs for Claude",
+  "version": "0.1.0",
+  "module": "url_fetch_mcp.main",
+  "transport": "stdio",
+  "environment": {
+    "DEBUG": "0"
+  }
+}
