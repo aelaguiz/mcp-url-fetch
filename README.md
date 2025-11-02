@@ -2,6 +2,10 @@
 
 A clean Model Context Protocol (MCP) implementation that enables Claude or any LLM to fetch content from URLs.
 
+<a href="https://glama.ai/mcp/servers/@aelaguiz/mcp-url-fetch">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@aelaguiz/mcp-url-fetch/badge" alt="URL Fetch MCP server" />
+</a>
+
 ## Features
 
 - Fetch content from any URL
